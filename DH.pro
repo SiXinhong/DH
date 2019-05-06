@@ -18,7 +18,7 @@ INCLUDEPATH += .\dahua\include
 LIBS += -L .\install\x64\mingw\lib\libopencv_*.a\
             .\dahua\lib\dh*.lib\
             .\dahua\lib\dhplay.lib
-
+LIBS += -ldbghelp
 SOURCES += main.cpp\
         mainwindow.cpp \
     myinterface.cpp \

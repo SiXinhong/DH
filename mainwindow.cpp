@@ -23,6 +23,7 @@
 #include <QDebug>
 #include <QTime>
 #include "worker.h"
+#include <QMessageBox>
 
 using namespace cv;
 using namespace std;
@@ -43,6 +44,7 @@ MainWindow::MainWindow(QWidget *parent) :
         }
     }
     if(!inter->isLogin){
+        QMessageBox::critical(NULL,"error","登录失败", QMessageBox::Close, QMessageBox::Close);
         return;
     }
 
@@ -60,6 +62,11 @@ MainWindow::MainWindow(QWidget *parent) :
 
     this->setCentralWidget(widget);
 
+    timer=new QTimer();
+    timer->setInterval(40);
+    connect(timer, SIGNAL(timeout()), SLOT(onTimerOut()));
+    timer->start();
+
     this->setWindowState(Qt::WindowMaximized);
     this->show();
 }
@@ -73,3 +80,6 @@ MainWindow::~MainWindow()
 void MainWindow::resizeEvent(QResizeEvent *){
 }
 
+void MainWindow::onTimerOut(){
+    this->label->setPixmap(this->pixmap);
+}

@@ -41,13 +41,16 @@ public:
     QLabel *label;
     MyInterface *inter;
     QGridLayout *gridlayout;
+    QPixmap pixmap;//为什么不直接在worker线程对label.setPixmap,因为画面切换时主线程刷新会使用label里的pixmap，并发设置会导致主线程使用了已销毁的pixmap，这里在主线程通过timer实现
 private:
+    QTimer *timer;
     Ui::MainWindow *ui;
 
 public:
 
 public slots:
   void resizeEvent(QResizeEvent *);
+  void onTimerOut();
 };
 
 #endif // MAINWINDOW_H

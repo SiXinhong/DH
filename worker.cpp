@@ -9,6 +9,7 @@ Worker::Worker()
 void Worker::run(){
     while(true){
         QPixmap pixMap = this->inter->getPixmap();
-        wm->label->setPixmap(pixMap);
+//        wm->label->setPixmap(pixMap);
+        wm->pixmap = pixMap;
     }
 }
