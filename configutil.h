@@ -13,6 +13,7 @@ public:
     static QString passwd;
     static int port;
     static void readConfigs();
+    static QString screenshotpath;
 
 private:
     static void readCamConfigs();

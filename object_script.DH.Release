@@ -6,7 +6,9 @@ INPUT(
 ./release\dahuainterface.o
 ./release\configutil.o
 ./release\worker.o
+./release\hkinterface.o
 ./release\moc_mainwindow.o
 ./release\moc_myinterface.o
 ./release\moc_dahuainterface.o
+./release\moc_hkinterface.o
 );

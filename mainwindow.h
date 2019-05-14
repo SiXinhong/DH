@@ -22,6 +22,9 @@
 #include "cvutil.h"
 #include "configutil.h"
 #include "myinterface.h"
+#include <QAction>
+#include <QMenuBar>
+#include <QMenu>
 
 using namespace cv;
 using namespace std;
@@ -46,11 +49,15 @@ private:
     QTimer *timer;
     Ui::MainWindow *ui;
 
+    QMenuBar* menubar;
+    QMenu* ToolMenu;
+    QAction* figure;
 public:
 
 public slots:
   void resizeEvent(QResizeEvent *);
   void onTimerOut();
+  void figureClicked();
 };
 
 #endif // MAINWINDOW_H

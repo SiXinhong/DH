@@ -6,7 +6,9 @@ INPUT(
 ./debug\dahuainterface.o
 ./debug\configutil.o
 ./debug\worker.o
+./debug\hkinterface.o
 ./debug\moc_mainwindow.o
 ./debug\moc_myinterface.o
 ./debug\moc_dahuainterface.o
+./debug\moc_hkinterface.o
 );
