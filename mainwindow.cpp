@@ -174,7 +174,7 @@ void MainWindow::onTimerOut(){
 
     int w = pixmap.width();
     int h = pixmap.height();
-    int a = h/2;
+    int a = h/2-23;
     QPainter painter(&pixmap);
     QPen pen;
     pen.setBrush(Qt::black);

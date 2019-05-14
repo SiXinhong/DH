@@ -42,7 +42,7 @@ void CALLBACK DecCBFun1(long nPort, char* pBuf, long nSize, FRAME_INFO* pFrameIn
         g_BGRImage.create(pFrameInfo->nHeight, pFrameInfo->nWidth, CV_8UC3);
         cv::Mat YUVImage(pFrameInfo->nHeight + pFrameInfo->nHeight / 2, pFrameInfo->nWidth, CV_8UC1, (unsigned char*)pBuf);
 
-        cv::cvtColor(YUVImage, g_BGRImage, cv::COLOR_YUV2BGR_YV12);
+        cv::cvtColor(YUVImage, g_BGRImage, cv::COLOR_YUV2BGR_IYUV);
 
         MyInterface::interfaces->setPixMap(CVUtil::cvMatToQPixmap(g_BGRImage));
         MyInterface::interfaces->imageStatus = 2;

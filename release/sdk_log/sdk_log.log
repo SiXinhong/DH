@@ -1316,3 +1316,25 @@ Begin Time:2019-05-09 00:25:07.996
 [2019-05-09 00:25:08.967][P:9284/T:11808][dhnetsdk.cpp:1085][Info][0] Leave CLIENT_RealPlayEx. [ret=93492528]
 [2019-05-09 00:25:08.967][P:9284/T:11808][dhnetsdk.cpp:2221][Info][0] Enter CLIENT_SetRealDataCallBackEx. [lRealHandle=93492528. cbRealData=0000000000405FC0, dwUser=0000000003F3CFF0. dwFlag=15.]
 [2019-05-09 00:25:08.967][P:9284/T:11808][dhnetsdk.cpp:2243][Info][0] Leave CLIENT_SetRealDataCallBackEx.[ret=1.]
+Begin Time:2019-05-14 22:26:02.380
+[2019-05-14 22:26:02.381][P:6380/T:8056][Utils.cpp:4792][Info][0] mutil NIC client
+[2019-05-14 22:26:02.386][P:6380/T:8056][AVNetSDKMgr.cpp:655][Info][0] Test avnetsdk module handle: 000000000DA10000
+
+[2019-05-14 22:26:02.386][P:6380/T:8056][dhnetsdk.cpp:155][Info][0] Leave CLIENT_InitEx.
+[2019-05-14 22:26:02.386][P:6380/T:8056][dhnetsdk.cpp:582][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.108, port=37777, SpeCap=0, lpDeviceInfo=000000000022FA20.]
+[2019-05-14 22:26:03.181][P:6380/T:8056][dhnetsdk.cpp:618][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=95600816.]
+[2019-05-14 22:26:03.182][P:6380/T:8056][dhnetsdk.cpp:1024][Info][0] Enter CLIENT_RealPlayEx. [lLoginID=95600816. nChannelID=0. rType=0]
+[2019-05-14 22:26:03.384][P:6380/T:8056][dhnetsdk.cpp:1085][Info][0] Leave CLIENT_RealPlayEx. [ret=95729744]
+[2019-05-14 22:26:03.384][P:6380/T:8056][dhnetsdk.cpp:2221][Info][0] Enter CLIENT_SetRealDataCallBackEx. [lRealHandle=95729744. cbRealData=0000000000405FC0, dwUser=00000000040DCFD0. dwFlag=15.]
+[2019-05-14 22:26:03.384][P:6380/T:8056][dhnetsdk.cpp:2243][Info][0] Leave CLIENT_SetRealDataCallBackEx.[ret=1.]
+Begin Time:2019-05-14 22:26:47.671
+[2019-05-14 22:26:47.671][P:4848/T:6600][Utils.cpp:4792][Info][0] mutil NIC client
+[2019-05-14 22:26:47.672][P:4848/T:6600][AVNetSDKMgr.cpp:655][Info][0] Test avnetsdk module handle: 000000000D980000
+
+[2019-05-14 22:26:47.672][P:4848/T:6600][dhnetsdk.cpp:155][Info][0] Leave CLIENT_InitEx.
+[2019-05-14 22:26:47.672][P:4848/T:6600][dhnetsdk.cpp:582][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.108, port=37777, SpeCap=0, lpDeviceInfo=000000000022FA20.]
+[2019-05-14 22:26:48.381][P:4848/T:6600][dhnetsdk.cpp:618][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=94027952.]
+[2019-05-14 22:26:48.382][P:4848/T:6600][dhnetsdk.cpp:1024][Info][0] Enter CLIENT_RealPlayEx. [lLoginID=94027952. nChannelID=0. rType=0]
+[2019-05-14 22:26:48.584][P:4848/T:6600][dhnetsdk.cpp:1085][Info][0] Leave CLIENT_RealPlayEx. [ret=94147888]
+[2019-05-14 22:26:48.584][P:4848/T:6600][dhnetsdk.cpp:2221][Info][0] Enter CLIENT_SetRealDataCallBackEx. [lRealHandle=94147888. cbRealData=0000000000405FC0, dwUser=0000000003F0CFD0. dwFlag=15.]
+[2019-05-14 22:26:48.584][P:4848/T:6600][dhnetsdk.cpp:2243][Info][0] Leave CLIENT_SetRealDataCallBackEx.[ret=1.]
